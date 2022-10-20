@@ -1,5 +1,3 @@
-# Scalable Web Services with Golang Hacktiv8 Batch 7
+# Scalable Web Services with Golang Hacktiv8
 
-## About
-
-Repository ini berisi source code selama pembelajaran Golang di FGA DTS Kominfo x Hacktiv8.
+Repository ini berisi dokumentasi selama pembelajaran Scalable Web Service with Golang di FGA DTS Kominfo x Hacktiv8.

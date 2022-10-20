@@ -1,0 +1,30 @@
+{{template "header.html"}}
+<div class="text-center">
+    <h1 class="display-5 text-primary">Water and Wind Indicator</h1>
+</div>
+<div class="card-group">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">Water</h2>
+            <img class="card-img-top" style="max-height: 8rem; object-fit: scale-down;" src="assets/img/water.png">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item {{ .waterClass }}">Height: {{ .water }} meter(s)</li>
+            <li class="list-group-item {{ .waterClass }}">Status: {{ .waterStatus }}</li>
+        </ul>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">Wind</h2>
+            <img class="card-img-top" style="max-height: 8rem; object-fit: scale-down;" src="assets/img/wind.png">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item {{ .windClass }}">Speed: {{ .wind }} m/s</li>
+            <li class="list-group-item {{ .windClass }}">Status: {{ .windStatus }}</li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    window.setTimeout(function(){ document.location.reload(true); }, 15000);
+</script>
+{{template "footer.html"}}
